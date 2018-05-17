@@ -18,6 +18,7 @@ import { EditAppareilComponent } from './edit-appareil/edit-appareil.component';
 import { UserService } from './services/user.service';
 import { UserListComponent } from './user-list/user-list.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NewUserComponent } from './new-user/new-user.component';
 
 
 const appRoutes: Routes = [
@@ -26,6 +27,7 @@ const appRoutes: Routes = [
   { path: 'auth', component: AuthComponent},
   { path: 'edit', component: EditAppareilComponent},
   { path: 'users', component: UserListComponent},
+  { path: 'new-user', component: NewUserComponent},
   { path: '', component: AuthComponent},
   { path: 'not-found', component: FourOhFourComponent },
   { path: '**', redirectTo: 'not-found' }
@@ -41,7 +43,8 @@ const appRoutes: Routes = [
     SingleAppareilComponent,
     FourOhFourComponent,
     EditAppareilComponent,
-    UserListComponent
+    UserListComponent,
+    NewUserComponent
   ],
   imports: [
     BrowserModule,
